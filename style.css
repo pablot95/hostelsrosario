@@ -91,7 +91,7 @@ section {
 }
 
 .nav-logo {
-    height: 50px;
+    height: 40px;
 }
 
 .btn-nav {
@@ -101,7 +101,7 @@ section {
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-family: var(--font-title-main);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     border: 2px solid var(--color-black);
     box-shadow: 2px 2px 0px var(--color-black);
     transition: transform 0.1s;
@@ -462,7 +462,7 @@ section {
 }
 
 .sticker-sol {
-    width: 80px;
+    width: 60px;
     top: 10px;
     right: 10px;
     animation: spin 20s linear infinite;
