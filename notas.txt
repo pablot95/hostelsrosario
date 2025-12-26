@@ -1,0 +1,103 @@
+Te dejo isntrucciones para armado de pagina html css js, podes sacar recursos e imagenes de internet. En carpeta images hay logos y recursos. La pagina debe tener stickers, estan nombrados, usalos de manera que quede prolijo. Vamos a priorizar el diseño para mobile. Segui las instrucciones.
+
+El huesped entra = home
+logos de hostels con links a instagrams
+mapa con cada logo de los restos
+
+seccion quienes somos, somos hostels asociados para promover el turismo joven en rosario asociados  bares y boliches para promover un turismo joven
+fotos de gente en rosario
+
+Logo
+
+boton de acceder a beneficios = password
+restaurants y bares con descuentos
+
+logos de hostels con links a instagrams
+mapa con cada logo de los restos
+
+seccion quienes somos, somos hostels asociados para promover el turismo joven en rosario asociados  bares y boliches para promover un turismo joven
+fotos de gente en rosario
+
+
+RRSS Títulos - Interletrado 0
+Bowlby One
+Gochi Hand
+Destacados / Ornamental- Interletrado 35
+Rubik Family
+Textos / Subtitulos- Interletrado 0
+
+Identidad visual -
+Paleta de colores
+#194728
+#149F6D
+#FF7148
+#668DCB #FED70E
+#F1CCAF
+#1D1D1B
+#F6FFFD
+
+
+
+Formato de la web
+Estas son ideas mias de como creo que podría estar armada la web, lógicamente que si consideras se puede hacer lo que te parezca
+
+El home
+Logo de la asociación en colores vivos, se puede usar el verde claro que queda bastante bien, podes ver nuestro ig (hostelsrosarinos) para tener idea del formato de diseño
+Carrusel interactivo con los logos de todos los hostels asociados, que tengan enlace a las web o redes de cada uno.
+Debajo una descripción de quienes somos, un grupo de Hostels que nos agrupámos para brindar mayor y mejor servicios promocionar la ciudad y sarasasasa.. Lo que se te ocurra perfecto
+
+Recorte de mapa marcado con la ubicación de cada Hostel en el mapa.
+
+Luego beneficios exclusivos para nuestros huéspedes, cliqueando ahí que abra una pesataña donde aparezcan todos los bares y boliches con los que hemos hecho convenio ( esto te lo detallo mas abajo)
+
+Algo de rosario, podría ser también algunas fotos con gente joven.
+
+
+La pestaña que se despliega cuando cliqueas en beneficios, debería estar a la izquierda los logos de cada bar, con el porcentaje de descuento y a la derecha el mapa con la ubicación de cada bar y también de forma diferenciada la de los hostels. Y un botón que dija “obteber descuentos” y ahí lo que hablamos que tendría que tenes una clave para que aparezca el qr
+
+
+
+
+
+
+
+
+
+Listado de Hostels
+
+Colmena
+Hostel Point
+Wolfhost
+High hostel
+La nueva comunidade
+Cool Raul hostel
+Hostel pop
+Sonder hostel
+Hostel realros
+Hostel freedom
+
+
+
+Listado de bares com los que al dia de hoy tenemos convênios
+
+Anker  15% de descuento
+Growler pichincha 15% desc
+Felling 15%
+Mercado zarpado 15% em todos los stands
+Growler terraza 15%
+El gran chopp 25% em comidas
+Growler abasto 15%
+Growler colégios de arquitectos 15%
+Busquete (vineria) falta que defina el descuento
+Lunvra a definir descuento pero ya esta dentro de lo que va a participar.
+Me queda pendiente beatmemo, que me falta que me confirme y 
+Sodita
+
+Igual tene en cuenta que vamos a agregar mas 
+
+Faltaria una sección para boliches. Dentro de los beneficios exclusivos, ya avance con la cámara de boliches de rosario, falta cerrar el tema, pero van a estar
+
+Ademas puede ser abajo en el home o en beneficios exclusivos, de que si son un grupo de +10 peersonas les organizamos ida/vuelta a la isla en bus turístico (los azules descapotables) cruce a club del rio con bebida y comida. Esto también va a estar.
+
+Lo que tiene que decir en titulo no es camara rosarina de hostel
+Sino, hostels rosarinos

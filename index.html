@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostels Rosarinos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Gochi+Hand&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="images/isologoverde.png" alt="Hostels Rosarinos Logo" class="nav-logo">
+        </div>
+        <button id="btn-nav-benefits" class="btn-nav">BENEFICIOS</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="sticker sticker-sol"><img src="images/sol.png" alt="Sol"></div>
+        <div class="sticker sticker-monumento"><img src="images/monumento.png" alt="Monumento"></div>
+        
+        <h1>HOSTELS ROSARINOS</h1>
+        <p class="subtitle">Tu casa en Rosario</p>
+        
+        <!-- Carousel -->
+        <div class="carousel-container">
+            <div class="carousel-track" id="hostelCarousel">
+                <!-- Hostels will be injected by JS -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Map Section (Hostels) -->
+    <section class="map-section">
+        <div class="sticker sticker-arbol"><img src="images/arbol.png" alt="Arbol"></div>
+        <h2>UBICACIÓN HOSTELS</h2>
+        <div id="map-hostels" class="map-container"></div>
+    </section>
+
+    <!-- Quienes Somos -->
+    <section class="about-us">
+        <div class="sticker sticker-mano1"><img src="images/mano1.png" alt="Mano"></div>
+        <h2>QUIENES SOMOS</h2>
+        <p>Somos un grupo de Hostels asociados para promover el turismo joven en Rosario. Nos agrupamos para brindar mayores y mejores servicios, promocionando nuestra hermosa ciudad.</p>
+        <p>Junto a bares y boliches amigos, creamos una red de beneficios para que disfrutes Rosario al máximo.</p>
+        
+        <div class="photos-grid">
+            <!-- Photos from internet -->
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1932&auto=format&fit=crop" alt="Turismo Joven"></div>
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070&auto=format&fit=crop" alt="Amigos"></div>
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=2070&auto=format&fit=crop" alt="Fiesta"></div>
+        </div>
+    </section>
+
+    <!-- Group Trip Info -->
+    <section class="group-trip">
+        <div class="sticker sticker-luna"><img src="images/luna.png" alt="Luna"></div>
+        <h3>¿GRUPO DE +10 PERSONAS?</h3>
+        <p>Les organizamos ida/vuelta a la isla en bus turístico y cruce a Club del Río con bebida y comida.</p>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits-section" class="benefits-teaser">
+        <div class="sticker sticker-pochoclo"><img src="images/pochoclo.png" alt="Pochoclo"></div>
+        <h2>BENEFICIOS EXCLUSIVOS</h2>
+        <p>Accedé a descuentos en los mejores bares y boliches de la ciudad.</p>
+        <button id="btn-access-benefits" class="btn-primary">ACCEDER A BENEFICIOS</button>
+    </section>
+
+    <!-- Benefits Modal / Overlay -->
+    <div id="benefits-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            
+            <div id="password-screen">
+                <h3>INGRESA LA CLAVE</h3>
+                <p>Pedila en la recepción de tu hostel.</p>
+                <input type="password" id="benefit-password" placeholder="Contraseña">
+                <button id="btn-submit-password" class="btn-secondary">INGRESAR</button>
+                <p id="password-error" class="error-msg hidden">Contraseña incorrecta</p>
+            </div>
+
+            <div id="benefits-content" class="hidden">
+                <h2>BARES Y BOLICHES AMIGOS</h2>
+                
+                <div class="benefits-layout">
+                    <div class="benefits-list">
+                        <h3>BARES</h3>
+                        <ul id="bars-list">
+                            <!-- Bars injected by JS -->
+                        </ul>
+                        
+                        <h3>BOLICHES</h3>
+                        <p>Próximamente...</p>
+                    </div>
+                    
+                    <div class="benefits-map-container">
+                        <div id="map-benefits" class="map-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QR Modal -->
+    <div id="qr-modal" class="modal hidden" style="z-index: 2000;">
+        <div class="modal-content" style="max-width: 400px; text-align: center;">
+            <span class="close-qr" style="position: absolute; top: 10px; right: 20px; font-size: 2rem; cursor: pointer; font-family: var(--font-title-main);">&times;</span>
+            <h3>TU CÓDIGO QR</h3>
+            <p>Presentá este código en el local para validar tu descuento</p>
+            <div class="qr-display" style="margin-top: 20px;">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://hostelsrosarinos.com/validado.html" alt="QR Code" style="width: 100%; max-width: 250px;">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="sticker sticker-mascaras"><img src="images/mascaras.png" alt="Mascaras"></div>
+        <p>&copy; 2025 Hostels Rosarinos</p>
+        <div class="social-links">
+            <a href="https://instagram.com/hostelsrosarinos" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>
