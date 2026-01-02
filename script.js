@@ -103,12 +103,14 @@ const btnAccess = document.getElementById('btn-access-benefits');
 const btnNavBenefits = document.getElementById('btn-nav-benefits');
 const btnClose = document.querySelector('.close-modal');
 const btnCloseQr = document.querySelector('.close-qr');
-const passwordScreen = document.getElementById('password-screen');
-const benefitsContent = document.getElementById('benefits-content');
-const btnSubmitPass = document.getElementById('btn-submit-password');
-const inputPass = document.getElementById('benefit-password');
-const errorMsg = document.getElementById('password-error');
 const barsList = document.getElementById('bars-list');
+
+// QR Modal Elements
+const qrPasswordScreen = document.getElementById('qr-password-screen');
+const qrContent = document.getElementById('qr-content');
+const btnQrPassword = document.getElementById('btn-qr-password');
+const inputQrPass = document.getElementById('qr-password-input');
+const errorQrMsg = document.getElementById('qr-password-error');
 
 // Populate Bars List
 function populateBars() {
@@ -126,29 +128,28 @@ function populateBars() {
         const btnQr = li.querySelector('.btn-qr-small');
         btnQr.addEventListener('click', () => {
             qrModal.classList.remove('hidden');
+            // Reset QR modal state
+            qrPasswordScreen.classList.remove('hidden');
+            qrContent.classList.add('hidden');
+            inputQrPass.value = '';
+            errorQrMsg.classList.add('hidden');
         });
 
         barsList.appendChild(li);
     });
 }
 
-btnAccess.addEventListener('click', () => {
+function openBenefitsModal() {
     modal.classList.remove('hidden');
-    // Reset state
-    passwordScreen.classList.remove('hidden');
-    benefitsContent.classList.add('hidden');
-    inputPass.value = '';
-    errorMsg.classList.add('hidden');
-});
+    populateBars();
+    setTimeout(() => {
+        initBenefitsMap();
+        mapBenefits.invalidateSize();
+    }, 100);
+}
 
-btnNavBenefits.addEventListener('click', () => {
-    modal.classList.remove('hidden');
-    // Reset state
-    passwordScreen.classList.remove('hidden');
-    benefitsContent.classList.add('hidden');
-    inputPass.value = '';
-    errorMsg.classList.add('hidden');
-});
+btnAccess.addEventListener('click', openBenefitsModal);
+btnNavBenefits.addEventListener('click', openBenefitsModal);
 
 btnClose.addEventListener('click', () => {
     modal.classList.add('hidden');
@@ -167,20 +168,14 @@ window.addEventListener('click', (e) => {
     }
 });
 
-btnSubmitPass.addEventListener('click', () => {
-    const pass = inputPass.value.toLowerCase().trim();
+btnQrPassword.addEventListener('click', () => {
+    const pass = inputQrPass.value.toLowerCase().trim();
     // Simple password check - hardcoded for demo
     if (pass === 'hostels' || pass === 'rosario' || pass === '1234') {
-        passwordScreen.classList.add('hidden');
-        benefitsContent.classList.remove('hidden');
-        populateBars();
-        // Need to invalidate size for Leaflet to render correctly in hidden container
-        setTimeout(() => {
-            initBenefitsMap();
-            mapBenefits.invalidateSize();
-        }, 100);
+        qrPasswordScreen.classList.add('hidden');
+        qrContent.classList.remove('hidden');
     } else {
-        errorMsg.classList.remove('hidden');
+        errorQrMsg.classList.remove('hidden');
     }
 });
 

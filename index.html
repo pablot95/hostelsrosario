@@ -78,15 +78,7 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             
-            <div id="password-screen">
-                <h3>INGRESA LA CLAVE</h3>
-                <p>Pedila en la recepción de tu hostel.</p>
-                <input type="password" id="benefit-password" placeholder="Contraseña">
-                <button id="btn-submit-password" class="btn-secondary">INGRESAR</button>
-                <p id="password-error" class="error-msg hidden">Contraseña incorrecta</p>
-            </div>
-
-            <div id="benefits-content" class="hidden">
+            <div id="benefits-content">
                 <h2>BARES Y BOLICHES AMIGOS</h2>
                 
                 <div class="benefits-layout">
@@ -112,10 +104,22 @@
     <div id="qr-modal" class="modal hidden" style="z-index: 2000;">
         <div class="modal-content" style="max-width: 400px; text-align: center;">
             <span class="close-qr" style="position: absolute; top: 10px; right: 20px; font-size: 2rem; cursor: pointer; font-family: var(--font-title-main);">&times;</span>
-            <h3>TU CÓDIGO QR</h3>
-            <p>Presentá este código en el local para validar tu descuento</p>
-            <div class="qr-display" style="margin-top: 20px;">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://hostelsrosario.vercel.app/validado.html" alt="QR Code" style="width: 100%; max-width: 250px;">
+            
+            <div id="qr-password-screen">
+                <h3>INGRESA LA CLAVE</h3>
+                <p>Pedila en la recepción de tu hostel para ver el QR.</p>
+                <input type="password" id="qr-password-input" placeholder="Contraseña" style="margin: 10px 0; padding: 8px;">
+                <br>
+                <button id="btn-qr-password" class="btn-secondary">VER QR</button>
+                <p id="qr-password-error" class="error-msg hidden">Contraseña incorrecta</p>
+            </div>
+
+            <div id="qr-content" class="hidden">
+                <h3>TU CÓDIGO QR</h3>
+                <p>Presentá este código en el local para validar tu descuento</p>
+                <div class="qr-display" style="margin-top: 20px;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://hostelsrosario.vercel.app/validado.html" alt="QR Code" style="width: 100%; max-width: 250px;">
+                </div>
             </div>
         </div>
     </div>
