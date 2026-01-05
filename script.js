@@ -1,30 +1,28 @@
 // Data
 const hostels = [
-    { name: "Colmena", logo: "images/colmena.jpeg", lat: -32.947, lng: -60.630, link: "https://instagram.com" },
-    { name: "Hostel Point", logo: "images/hostelpoint.jpeg", lat: -32.940, lng: -60.645, link: "https://instagram.com" },
-    { name: "Wolfhost", logo: "images/wolfhost.jpeg", lat: -32.950, lng: -60.650, link: "https://instagram.com" },
-    { name: "High Hostel", logo: "images/highhostel.jpeg", lat: -32.935, lng: -60.640, link: "https://instagram.com" },
-    { name: "La Nueva Comunidad", logo: "images/lanuevacomunidad.jpeg", lat: -32.955, lng: -60.635, link: "https://instagram.com" },
-    { name: "Cool Raul", logo: "images/coolraulhostel.jpeg", lat: -32.942, lng: -60.638, link: "https://instagram.com" },
-    { name: "Hostel Pop", logo: "images/hostelpop.jpeg", lat: -32.948, lng: -60.642, link: "https://instagram.com" },
-    { name: "Sonder Hostel", logo: "images/sonderhostel.jpeg", lat: -32.938, lng: -60.655, link: "https://instagram.com" },
-    { name: "Hostel RealRos", logo: "images/hostelrealros.jpeg", lat: -32.945, lng: -60.660, link: "https://instagram.com" },
-    { name: "Hostel Freedom", logo: "images/hostelfreedom.jpeg", lat: -32.952, lng: -60.648, link: "https://instagram.com" }
+    { name: "Colmena", logo: "images/colmena.jpeg", lat: -32.9458318, lng: -60.6395654, address: "Mitre 778", link: "https://instagram.com" },
+    { name: "Hostel Point", logo: "images/hostelpoint.jpeg", lat: -32.9388472, lng: -60.6469437, address: "Catamarca 1837", link: "https://instagram.com" },
+    { name: "Wolfhost", logo: "images/wolfhost.jpeg", lat: -32.9551428, lng: -60.6374348, address: "Maipu 1470", link: "https://instagram.com" },
+    { name: "High Hostel", logo: "images/highhostel.jpeg", lat: -32.9433854, lng: -60.6402415, address: "Entre Rios 583", link: "https://instagram.com" },
+    { name: "La Nueva Comunidad", logo: "images/lanuevacomunidad.jpeg", lat: -32.9411663, lng: -60.6440092, address: "Roca 453", link: "https://instagram.com" },
+    { name: "Cool Raul", logo: "images/coolraulhostel.jpeg", lat: -32.9426443, lng: -60.6454075, address: "San Lorenzo 1670", link: "https://instagram.com" },
+    { name: "Hostel Pop", logo: "images/hostelpop.jpeg", lat: -32.9562239, lng: -60.6474648, address: "Av. Pellegrini 1577", link: "https://instagram.com" },
+    { name: "Sonder Hostel", logo: "images/sonderhostel.jpeg", lat: -32.9575517, lng: -60.6353023, address: "Buenos Aires 1642", link: "https://instagram.com" },
+    { name: "Hostel RealRos", logo: "images/hostelrealros.jpeg", lat: -32.9560059, lng: -60.6474474, address: "Av. Pellegrini 1580", link: "https://instagram.com" },
+    { name: "Hostel Freedom", logo: "images/hostelfreedom.jpeg", lat: -32.9456899, lng: -60.6349128, address: "Maipu 646", link: "https://instagram.com" }
 ];
 
 const bars = [
-    { name: "Anker", discount: "15% OFF", lat: -32.930, lng: -60.650 },
-    { name: "Growler Pichincha", discount: "15% OFF", lat: -32.932, lng: -60.655 },
-    { name: "Felling", discount: "15% OFF", lat: -32.935, lng: -60.660 },
-    { name: "Mercado Zarpado", discount: "15% OFF", lat: -32.940, lng: -60.630 },
-    { name: "Growler Terraza", discount: "15% OFF", lat: -32.945, lng: -60.635 },
-    { name: "El Gran Chopp", discount: "25% OFF", lat: -32.950, lng: -60.640 },
-    { name: "Growler Abasto", discount: "15% OFF", lat: -32.955, lng: -60.645 },
-    { name: "Growler Col. Arq.", discount: "15% OFF", lat: -32.960, lng: -60.650 },
-    { name: "Busquete", discount: "Consultar", lat: -32.938, lng: -60.642 },
-    { name: "Lunvra", discount: "Consultar", lat: -32.942, lng: -60.648 },
-    { name: "Beatmemo", discount: "Consultar", lat: -32.948, lng: -60.652 },
-    { name: "Sodita", discount: "Consultar", lat: -32.952, lng: -60.658 }
+    { name: "Anker", discount: "15% OFF", lat: -32.93514685701978, lng: -60.65226338331967, address: "Jujuy 2290", logo: "images/anker.png" },
+    { name: "Growler Pichincha", discount: "15% OFF", lat: -32.93358053072704, lng: -60.65204445282001, address: "Alvear 51 bis", logo: "images/pichincha.png" },
+    { name: "Feelin", discount: "15% OFF", lat: -32.93900940522283, lng: -60.646288992277405, address: "Italia 301", logo: "images/feelin.png" },
+    { name: "Mercado Zarpado", discount: "15% OFF", lat: -32.94903544740613, lng: -60.637804507574444, address: "San Luis 1038", logo: "images/mercadozarpado.png" },
+    { name: "Club Terrazas", discount: "15% OFF", lat: -32.93773864026596, lng: -60.63962129474464, address: "Jujuy 1351", logo: "images/club-terrazas.png" },
+    { name: "El Gran Chopp", discount: "25% OFF", lat: -32.95584090950327, lng: -60.64762525547497, address: "Pellegrini 1590", logo: "images/gran-chopp.jpeg" },
+    { name: "Growler Abasto", discount: "15% OFF", lat: -32.9581832691446, lng: -60.64852429278909, address: "Pte. Roca 1898", logo: "images/abasto.png" },
+    { name: "Growler Col. Arq.", discount: "15% OFF", lat: -32.94609580128957, lng: -60.63161651939801, address: "Av. Belgrano 646", logo: "images/colegio.png" },
+    { name: "Bouquet", discount: "Consultar", lat: -32.948660819382084, lng: -60.648521853147095, address: "San Juan 1777", logo: "images/bouquet.PNG" },
+    { name: "Lumvra", discount: "Consultar", lat: -32.95559205181681, lng: -60.64852955757221, address: "Pellegrini 1646", logo: "images/Lumvra.png" }
 ];
 
 // Initialize Carousel
@@ -73,7 +71,7 @@ function initMaps() {
 
         L.marker([h.lat, h.lng], {icon: customIcon})
             .addTo(mapHostels)
-            .bindPopup(`<b>${h.name}</b>`);
+            .bindPopup(`<b>${h.name}</b><br>${h.address}`);
     });
 }
 
@@ -87,12 +85,18 @@ function initBenefitsMap() {
     }).addTo(mapBenefits);
 
     // Bar Markers (Orange/Different)
-    // Using a default marker with a different color filter or just default blue for now
-    // Ideally we'd use a custom icon for bars
     bars.forEach(b => {
-        L.marker([b.lat, b.lng])
+        const customIcon = L.icon({
+            iconUrl: b.logo,
+            iconSize: [40, 40],
+            iconAnchor: [20, 20],
+            popupAnchor: [0, -20],
+            className: 'map-marker-logo'
+        });
+
+        L.marker([b.lat, b.lng], {icon: customIcon})
             .addTo(mapBenefits)
-            .bindPopup(`<b>${b.name}</b><br>${b.discount}`);
+            .bindPopup(`<b>${b.name}</b><br>${b.address}<br>${b.discount}`);
     });
 }
 
@@ -119,8 +123,12 @@ function populateBars() {
         const li = document.createElement('li');
         li.innerHTML = `
             <div class="bar-info">
-                <span class="bar-name">${bar.name}</span>
-                <span class="discount-badge">${bar.discount}</span>
+                <img src="${bar.logo}" alt="${bar.name}" class="bar-logo-small">
+                <div class="bar-details">
+                    <span class="bar-name">${bar.name}</span>
+                    <span class="bar-address">${bar.address}</span>
+                    <span class="discount-badge">${bar.discount}</span>
+                </div>
             </div>
             <button class="btn-qr-small">OBTENER QR</button>
         `;
