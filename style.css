@@ -181,7 +181,7 @@ section {
     background-color: var(--color-green);
     color: white;
     border-radius: 20px;
-    margin: 2rem 1rem;
+    margin: 2rem 0.5rem;
 }
 
 .about-us h2 {
@@ -190,7 +190,7 @@ section {
 
 .photos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     margin-top: 2rem;
 }
@@ -445,6 +445,20 @@ section {
         width: auto;
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-us, .group-trip, .benefits-teaser {
+        text-align: center;
+        margin: 3rem auto;
+        max-width: 1200px;
+    }
+
+    .about-us p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
     }
 }
 
