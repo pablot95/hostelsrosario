@@ -15,7 +15,7 @@ const hostels = [
 const bars = [
     { name: "Anker", discount: "15% OFF", lat: -32.93514685701978, lng: -60.65226338331967, address: "Jujuy 2290", logo: "images/anker.png" },
     { name: "Growler Pichincha", discount: "15% OFF", lat: -32.93358053072704, lng: -60.65204445282001, address: "Alvear 51 bis", logo: "images/pichincha.png" },
-    { name: "Feelin", discount: "15% OFF", lat: -32.93900940522283, lng: -60.646288992277405, address: "Italia 301", logo: "images/feelin.png" },
+    { name: "Feelin'", discount: "15% OFF", lat: -32.93900940522283, lng: -60.646288992277405, address: "Italia 301", logo: "images/feelin.png" },
     { name: "Mercado Zarpado", discount: "15% OFF", lat: -32.94903544740613, lng: -60.637804507574444, address: "San Luis 1038", logo: "images/mercadozarpado.png" },
     { name: "Club Terrazas", discount: "15% OFF", lat: -32.93773864026596, lng: -60.63962129474464, address: "Jujuy 1351", logo: "images/club-terrazas.png" },
     { name: "El Gran Chopp", discount: "25% OFF", lat: -32.95584090950327, lng: -60.64762525547497, address: "Pellegrini 1590", logo: "images/gran-chopp.jpeg" },
@@ -179,7 +179,7 @@ window.addEventListener('click', (e) => {
 btnQrPassword.addEventListener('click', () => {
     const pass = inputQrPass.value.toLowerCase().trim();
     // Simple password check - hardcoded for demo
-    if (pass === 'hostels' || pass === 'rosario' || pass === '1234') {
+    if (pass === '5618') {
         qrPasswordScreen.classList.add('hidden');
         qrContent.classList.remove('hidden');
     } else {
