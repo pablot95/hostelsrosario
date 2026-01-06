@@ -18,10 +18,10 @@ const bars = [
     { name: "Feelin'", discount: "15% OFF", lat: -32.93900940522283, lng: -60.646288992277405, address: "Italia 301", logo: "images/feelin.png" },
     { name: "Mercado Zarpado", discount: "15% OFF", lat: -32.94903544740613, lng: -60.637804507574444, address: "San Luis 1038", logo: "images/mercadozarpado.png" },
     { name: "Club Terrazas", discount: "15% OFF", lat: -32.93773864026596, lng: -60.63962129474464, address: "Jujuy 1351", logo: "images/club-terrazas.png" },
-    { name: "El Gran Chopp", discount: "25% OFF", lat: -32.95584090950327, lng: -60.64762525547497, address: "Pellegrini 1590", logo: "images/gran-chopp.jpeg" },
+    { name: "El Gran Chopp", discount: "25% OFF en comidas", lat: -32.95584090950327, lng: -60.64762525547497, address: "Pellegrini 1590", logo: "images/gran-chopp.jpeg" },
     { name: "Growler Abasto", discount: "15% OFF", lat: -32.9581832691446, lng: -60.64852429278909, address: "Pte. Roca 1898", logo: "images/abasto.png" },
     { name: "Growler Col. Arq.", discount: "15% OFF", lat: -32.94609580128957, lng: -60.63161651939801, address: "Av. Belgrano 646", logo: "images/colegio.png" },
-    { name: "Bouquet", discount: "Consultar", lat: -32.948660819382084, lng: -60.648521853147095, address: "San Juan 1777", logo: "images/bouquet.PNG" },
+    { name: "Bouquet", discount: "10% OFF", lat: -32.948660819382084, lng: -60.648521853147095, address: "San Juan 1777", logo: "images/bouquet.PNG" },
     { name: "Lumvra", discount: "Consultar", lat: -32.95559205181681, lng: -60.64852955757221, address: "Pellegrini 1646", logo: "images/Lumvra.png" }
 ];
 
