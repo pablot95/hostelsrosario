@@ -563,3 +563,28 @@ footer a {
     font-family: var(--font-title-hand);
     font-size: 1.2rem;
 }
+
+/* Gokywebs Signature */
+footer .gokywebs-signature {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    opacity: 0.7;
+    font-family: var(--font-text);
+}
+
+footer .gokywebs-signature p {
+    margin-bottom: 0;
+}
+
+footer .gokywebs-signature a {
+    font-family: var(--font-text);
+    font-size: 0.8rem;
+    color: var(--color-off-white);
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(246, 255, 253, 0.5);
+}
+
+footer .gokywebs-signature a:hover {
+    color: var(--color-yellow);
+    border-color: var(--color-yellow);
+}
